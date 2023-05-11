@@ -1,0 +1,266 @@
+/* Vista Desktop */
+
+@media(min-width: 1024px) {
+
+    /* Header - General - Desktop */
+    
+    header, ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .jc {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    li {
+        padding: 30px;
+    }
+    
+    .logo {
+        width: 330px;
+        height: 260px;
+        padding: -34px;
+    }
+    
+    a {
+        font-size: 22px;
+    }
+    
+    /* Main - Index - */
+    
+    .gridIn {
+        display: grid;
+        grid-template-areas: 
+        "reikiImg regAkImg constImg"
+        "reikiImg barrasImg constImg"
+        "reikiImg tarotImg constImg";
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto auto;
+    }
+    .reikiImg {
+            grid-area:reikiImg;
+    }
+    .regAkImg {
+            grid-area:regAkImg;
+    }
+    .barrasImg {grid-area:barrasImg;
+    }
+    .tarotImg {
+            grid-area:tarotImg;
+    }
+    .constImg {
+            grid-area:constImg;
+    }
+    
+    .imgFix {
+        width: 100%;
+        height: 100%;
+    }
+    
+    /*Main - Reiki - */
+    
+    .gridRei {
+        display: grid;
+        grid-template-areas:
+        "imgIzRei p1Rei imgDerRei"
+        "p2Rei imgMeRei p3Rei";
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto auto;
+    }
+    
+    .imgIzRei {
+        grid-area:imgIzRei;
+    }
+    .p1Rei {
+        grid-area:p1Rei;
+    }
+    .imgDerRei {
+        grid-area:imgDerRei;
+    }
+    .p2Rei {
+        grid-area:p2Rei;
+    }
+    .imgMeRei {
+        grid-area:imgMeRei;
+    }
+    .p3Rei {
+        grid-area:p3Rei;
+    }
+    
+    .pr {
+        font-size: 35px;
+    }
+    
+    .logoReiki {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .logFix {
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+    }
+    
+    .imgFixRei {
+        width: 100%;
+        height: auto;
+    }
+    
+    /*Main - Constelaciones - Desktop */
+    
+    .constGrid {
+        display: grid;
+        grid-template-areas:
+        "constVinc3 constVinc2 constVinc"
+        "constVinc4 constVinc1 constVinc"
+        "pConst pConst pConst";
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto auto;
+    }
+    
+    .constVinc {
+        grid-area: constVinc;
+    }
+    .constVinc1 {
+        grid-area: constVinc1;
+    }
+    .constVinc2 {
+        grid-area: constVinc2;
+    }
+    .constVinc3 {
+        grid-area: constVinc3;
+    }
+    .constVinc4 {
+        grid-area: constVinc4;
+    }
+    .pConst {
+        grid-area: pConst;
+    }
+    
+    .constP {
+        font-size: 35px;
+        padding: 20px;
+    }
+    
+    .constVinc1, .constVinc3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    /* Main - Reg. Akashicos - Desktop */
+    
+    .regGrid {
+        display: grid;
+        grid-template-areas: 
+        "regImg1 regImg2 regImg3"
+        "regP regP regP";
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto;
+    }
+    
+    .regImg1 {
+        grid-area: regImg1;
+    }
+    .regImg2 {
+        grid-area: regImg2;
+    }
+    .regImg3 {
+        grid-area: regImg3;
+    }
+    .regP {
+        grid-area: regP;
+    }
+    
+    .regP {
+        font-size: 35px;
+        padding: 20px;
+    }
+    
+    /* Main - Barras de Access - Desktop */
+    
+    .baGrid {
+        display: grid;
+        grid-template-areas:  
+        "baImg1 baImg2 baImg3"
+        "baP baP baP"
+        "baImg4 baImg5 baImg6";
+        grid-template-columns: 33% 34% 33%;
+        grid-template-rows: auto auto auto;
+    }
+    
+    .baImg {
+        grid-area: baImg;
+    }
+    .baImg2 {
+        grid-area: baImg2;
+    }
+    .baImg3 {
+        grid-area: baImg3;
+    }
+    .baP {
+        grid-area: baP;
+    }
+    .baImg4 {
+        grid-area: baImg4;
+    }
+    .baImg5 {
+        grid-area: baImg5;
+    }
+    .baImg6 {
+        grid-area: baImg6;
+    }
+    
+    .baP { 
+        font-size: 35px;
+        padding: 20px;
+    }
+    
+    /* Footer - General - Desktop */
+    
+    footer {
+        display: grid;
+        grid-template-areas: 
+        "tit tit tit"
+        "inst fb wp";
+        grid-template-columns: 10% 10% 10%;
+        grid-template-rows: auto auto auto;
+        justify-content: center;
+        justify-items: center;
+        align-content: space-evenly;
+        height: 150px;
+    }
+    
+    .tit {
+        grid-area: tit;
+        }
+    .inst {
+        grid-area: inst;
+    }
+    .fb {
+        grid-area: fb;
+    }
+    .wp {
+        grid-area: wp;
+    }
+    
+    .imgFoot {
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+    }
+    
+    .pr1 {
+        font-size: 43px;
+    }
+    .pr2 {
+        font-size: 40px;
+    }
+    
+    }
+    
